@@ -1,4 +1,5 @@
 node_modules/
 output/
+invoices.db
 .DS_Store
 .claude/settings.local.json

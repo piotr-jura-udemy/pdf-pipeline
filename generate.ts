@@ -63,7 +63,7 @@ export function formatDate(dateStr: string): string {
   });
 }
 
-function drawInvoice(invoice: Invoice, outputPath: string): Promise<void> {
+export function drawInvoice(invoice: Invoice, outputPath: string): Promise<void> {
   const doc = new PDFDocument({ size: "A4", margin: 50 });
   const stream = fs.createWriteStream(outputPath);
   doc.pipe(stream);

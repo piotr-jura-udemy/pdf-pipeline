@@ -4,13 +4,18 @@
   "type": "module",
   "scripts": {
     "start": "tsx generate.ts",
+    "parse": "tsx parse.ts",
+    "query": "tsx query.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "pdf-parse": "^2.4.5",
     "pdfkit": "^0.18.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.10.0",
     "@types/pdfkit": "^0.13.9",
     "tsx": "^4.19.0",
